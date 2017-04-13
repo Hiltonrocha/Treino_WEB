@@ -1,0 +1,22 @@
+reinstall_apps
+start_test_server_in_background
+reinstall_apps
+start_test_server_in_background
+exir
+exir
+exit
+reinstall_apps
+start_test_server_in_background
+reinstall_apps
+start_test_server_in_background
+exit
+query("*")
+start_test_server_in_background
+query("*")
+ tap_when_element_exists("android.widget.ImageButton" {contentDescription CONTAINS[c] 'Interstitial close button'})
+ tap_when_element_exists(" android.widget.ImageButton {contentDescription CONTAINS[c] 'Interstitial close button'}")
+ touch(" android.widget.ImageButton {contentDescription CONTAINS[c] 'Interstitial close button'}")
+ touch(" android.widget.ImageButton{contentDescription CONTAINS[c] 'Interstitial close button'}")
+ touch("* android.widget.ImageButton{contentDescription CONTAINS[c] 'Interstitial close button'}")
+ touch("* android.widget.TextView{text CONTAINS[c] 'Moto'}")
+exit
