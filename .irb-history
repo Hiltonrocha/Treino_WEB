@@ -1,22 +1,50 @@
-reinstall_apps
-start_test_server_in_background
-reinstall_apps
-start_test_server_in_background
-exir
-exir
 exit
 reinstall_apps
-start_test_server_in_background
-reinstall_apps
+exit
 start_test_server_in_background
 exit
-query("*")
-start_test_server_in_background
-query("*")
- tap_when_element_exists("android.widget.ImageButton" {contentDescription CONTAINS[c] 'Interstitial close button'})
- tap_when_element_exists(" android.widget.ImageButton {contentDescription CONTAINS[c] 'Interstitial close button'}")
- touch(" android.widget.ImageButton {contentDescription CONTAINS[c] 'Interstitial close button'}")
- touch(" android.widget.ImageButton{contentDescription CONTAINS[c] 'Interstitial close button'}")
- touch("* android.widget.ImageButton{contentDescription CONTAINS[c] 'Interstitial close button'}")
- touch("* android.widget.TextView{text CONTAINS[c] 'Moto'}")
+query("* id:'search_id'")
+query("* id:'search_id'")
+query(" id:'search_id'")
+touch("* id:'search_id'{text CONTAINS[c] 'Modelo'}")
+touch("* id:'search_id'{text CONTAINS[c] 'Modelo'}")
+touch("* id:'search_id'{text CONTAINS[c] 'Modelo'}")
+touch(" id:'search_id'{text CONTAINS[c] 'Modelo'}")
+tap_when_element_exists(" id:'search_id'{text CONTAINS[c] 'Modelo'}")
+query(" id:'search_title'")
+query("* id:'search_title'")
+tap_when_element_exists(" id:'search_title'{text CONTAINS[c] 'Modelo'}")
+tap_when_element_exists("* id:'search_title'{text CONTAINS[c] 'Modelo'}")
+tap_when_element_exists("* id:'search_title'{text CONTAINS[c] 'Modelo'}")
+tap_when_element_exists("* id:'search_title'{text CONTAINS[c] 'Modelo'}")
+tap_when_element_exists("* id:'search_title'{text LIKE 'Modelo'}")
+touch("* id:'search_title'{text LIKE 'Modelo'}")
+touch(" android.widget.TextView'{text LIKE 'Modelo'}")
+touch("* android.widget.TextView'{text LIKE 'Modelo'}")
+touch("* android.widget.TextView'{text LIKE 'Modelo'}")
+touch("* android.widget.LinearLayout'{text LIKE 'Modelo'}")
+touch("* android.widget.LinearLayout'{text LIKE 'Modelo'}")
+touch("* android.widget.LinearLayout'{text CONTAINS[c] 'Modelo'}")
+touch("* android.widget.LinearLayout'{text CONTAINS[c] 'MODELO'}")
+touch("* android.widget.LinearLayout'").[2]
+touch("* android.widget.LinearLayout'.[2]")
+touch(" android.widget.LinearLayout'.[2]")
+query(" android.widget.LinearLayout")
+query(" hands.android.webmotors")
+query("* hands.android.webmotors")
+query("* android.widget.TextView")
+query(" org.holoeverywhere.widget.TextView")
+query("search_title")
+query("* id:'search_title')
+query(" id:'search_title')
+query("* id:'search_title'")
+touch("* id:'search_title' index:1")
+query("* id:'search_src_text', setText:'COURIER')
+query("* id:'search_src_text', setText:"COURIER")
+query("* id:'search_src_text'", setText:"COURIER")
+touch("* id:'activity_single_selection_row_title'")
+touch("* id:'search_title' index:3")
+touch("* id:'activity_single_selection_row_title'{text CONTAINS[c] '1.6 MPI L 8V FLEX 2P MANUAL'}")
+touch("* id:'activity_single_selection_row_title'")
+touch("* id:'activity_single_selection_row_title'")
 exit
